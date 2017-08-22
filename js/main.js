@@ -25,7 +25,7 @@ $(function(){
 	
 	//float menu
 	if($('.left-menu').length){
-		leftMenu();
+		leftMenuInit();
 	}
 
 
