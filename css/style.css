@@ -20669,3 +20669,12 @@ a.pswp__share--download:hover {
     font-size: 20px;
     -webkit-transform: translate(0, -50%);
             transform: translate(0, -50%); }
+
+.nav .catalog {
+  background-color: #DF0523; }
+  .nav .catalog a {
+    position: relative;
+    color: white !important;
+    border-bottom: 2px solid #df0523;
+    box-shadow: none;
+    box-shadow: none !important; }
