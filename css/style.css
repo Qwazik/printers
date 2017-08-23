@@ -20678,3 +20678,27 @@ a.pswp__share--download:hover {
     border-bottom: 2px solid #df0523;
     box-shadow: none;
     box-shadow: none !important; }
+
+.catalog:hover .submenu {
+  display: block !important;
+  position: absolute;
+  top: 100%;
+  left: -1px;
+  z-index: 100;
+  background-color: #DF0523;
+  color: white;
+  display: block;
+  height: auto !important;
+  margin: 0;
+  white-space: nowrap;
+  padding: 0; }
+  .catalog:hover .submenu a {
+    display: block;
+    padding: 10px 20px; }
+  .catalog:hover .submenu li {
+    border: none !important; }
+    .catalog:hover .submenu li:hover {
+      background-color: #FFF; }
+      .catalog:hover .submenu li:hover a {
+        color: #DF0523 !important;
+        text-decoration: none !important; }

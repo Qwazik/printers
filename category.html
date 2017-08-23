@@ -64,7 +64,17 @@
           </div>
           <div class="collapse navbar-collapse navbar-top-collapse collapsing">
             <ul class="nav navbar-nav">
-              <li class="catalog"><a title="Где купить?" target="_self" href="catalog.html"> <i class="fa fa-bars"> </i><span> Каталог</span></a></li>
+              <li class="catalog"><a title="Где купить?" target="_self" href="catalog.html"> <i class="fa fa-bars"> </i><span> Каталог</span></a>
+                <ul class="submenu">
+                  <li><a href="#">Монохромные копиры | МФУ</a></li>
+                  <li><a href="#">Цветные копиры | МФУ</a></li>
+                  <li><a href="#">Монохромные принтеры</a></li>
+                  <li><a href="#">Цветные принтеры</a></li>
+                  <li><a href="#">Расходные материалы</a></li>
+                  <li><a href="#">Опции | Аксессуары</a></li>
+                  <li><a href="#">Архивные модели</a></li>
+                </ul>
+              </li>
               <li class="active"><a title="На главную" target="_self" href="index.html">Главная</a></li>
               <li><a title="Продукты" target="_self" href="content.html">О нас</a></li>
               <li><a title="Решения" target="_self" href="content.html">Контакты</a></li>
@@ -459,7 +469,65 @@
                 </div>
               </div>
               <div class="help-block">
-                <div class="pull-right"><a href="#">Регистрация </a><span> / </span><a href="#">Забыли пароль ? </a></div>
+                <div class="pull-right"><a href="#" data-target="#modalReg" data-toggle="modal">Регистрация </a><span> / </span><a href="#" data-target="#modalPas" data-toggle="modal">Забыли пароль ? </a></div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" data-dismiss="modal" class="btn btn-default">Закрыть</button>
+              <button type="button" class="btn btn-primary">Войти</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="modalReg" tabindex="-1" role="dialog" aria-labelledby="modalAuth" aria-hidden="true" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" data-dismiss="modal" aria-hidden="true" class="close">×</button>
+              <h4 id="myModalLabel" class="modal-title">Регистрация</h4>
+            </div>
+            <div class="panel-body">
+              <div class="form-group">
+                <div class="input-group"><span class="input-group-addon"><i class="fa fa-user"></i></span>
+                  <input type="text" placeholder="Имя пользователя" class="form-control">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group"><span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                  <input type="text" placeholder="Электронная почта" class="form-control">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group"><span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                  <input type="text" placeholder="Пароль" class="form-control">
+                </div>
+              </div>
+              <div class="help-block">
+                <div class="pull-right"><a href="#" data-target="#modalPas" data-toggle="modal">Забыли пароль ? </a></div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" data-dismiss="modal" class="btn btn-default">Закрыть</button>
+              <button type="button" class="btn btn-primary">Войти</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="modalPas" tabindex="-1" role="dialog" aria-labelledby="modalAuth" aria-hidden="true" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" data-dismiss="modal" aria-hidden="true" class="close">×</button>
+              <h4 id="myModalLabel" class="modal-title">Восстановление пароля</h4>
+            </div>
+            <div class="panel-body">
+              <div class="form-group">
+                <div class="input-group"><span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                  <input type="email" placeholder="Электронная почта" class="form-control">
+                </div>
+              </div>
+              <div class="help-block">
+                <div class="pull-right"><a href="#" data-target="#modalReg" data-toggle="modal">Регистрация </a></div>
               </div>
             </div>
             <div class="modal-footer">
