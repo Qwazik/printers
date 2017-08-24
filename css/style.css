@@ -20804,13 +20804,15 @@ body {
   min-width: 320px; }
 
 .features-block {
-  background-color: #EFEFEF;
   overflow: hidden;
   padding: 15px 0 20px; }
+  .features-block .container {
+    border-bottom: 1px solid #efefef; }
+  .features-block + .container .pad-medium {
+    padding-top: 0; }
 
 .features-item {
   margin-bottom: 30px;
-  height: 80px;
   text-align: center; }
   .features-item .icon {
     text-align: center;
