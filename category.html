@@ -11,7 +11,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="keywords" content="Kyocera,Куосера,Принтер, Document Solutions, Cканер,Факс,откройте для себя,лазерный,принтер,печать,бумага,опция,лазерный принтер,цветной копир,копир,многофункциональный,многофункциональный,страничный принтер,страница,цифровой,цифровой копир,система,сеть,Ecosys,Eco-Sys,Расходные материалы,керамика,барабан,экономичен в обслуживании,рентабельный ,экономичный,издержки на страницу,экологический,драйвер,сканер,pdf,тонер,таблица,цветной лазерный принтер,расходы на печать,цветная печать,принтер для цветной печати,поддержка,обслуживание,цветной лазерный,ПО для печати,драйвер для принтера,сетевой принтер,сетевой лазерный принтер,офисный принтер,факс,оборудование для факсимильной связи,ПК,Mac,многофункциональное оборудование,экономичный ,широкий формат,принтер подразделения,тонер,отверстия,связывание,сортировка,сортировщик,буклет,модульный,почтовый ящик,печать в почтовый ящик,штриховой код,управление документооборотом,сканирование,степлирование,решения для печати,двусторонняя,DIN A0,DIN A3,DIN A4,PCL6,сохранить,команда,рабочая станция,офис,точек на дюйм (dpi),копий в минуту (cpm),копирование,печать,сканирование,факсимильная связь,удобный для пользователя,производительность,усовершенствования,число страниц в минуту (ppm),многофункциональный порт (MFP),барабан, рассчитанный на долговременную эксплуатацию,универсальный лоток,автоматический обработчик документов,Разделитель заданий,Устройство для двустороннего копирования,Увеличение памяти,Параллельный интерфейс,Устройство считывания штрихового кода,Плоттер контроллера интернета">
     <meta name="description" content="Корпорация KYOCERA Document Solutions, одна из ведущих компаний мира в области управления печатью, производит и реализует монохромные и цветные сетевые принтеры, многофункциональные устройства (МФУ), широкоформатные продукты и портфели программных решений.">
     <meta name="author" content="KYOCERA Document Solutions Russia LLC">
@@ -31,17 +31,20 @@
     <!--[if lt IE 8]>
     <p class="browserupgrade">Ваш браузер  <strong>устарел</strong>. Пожалуйста <a href="http://browsehappy.com/">обновите ваш браузер</a> для корректного отображения сайтов.</p><![endif]-->
     <div class="page">
+      <div class="mobile-header">
+        <div data-copy="#userBlockCopy"></div>
+        <div data-copy="#catalogCopy"></div>
+      </div>
       <header id="header">
         <div class="container">
           <div class="row">
-            <div class="col-md-4 col-sm-6 col-xs-8"><a title="KYOCERA Document Solutions Russia" href="index.html"><img id="logo" src="img/kyocera-logo.png" alt="Go to KYOCERA HOME"></a><strong>KYOCERA MITA</strong></div>
-            <div class="col-md-8 col-sm-6 col-xs-4">
+            <div class="col-md-4 col-sm-4 col-xs-12"><a title="KYOCERA Document Solutions Russia" href="index.html" class="header__logo"><img id="logo" src="img/kyocera-logo.png" alt="Go to KYOCERA HOME" class="img-responsive"></a><strong>KYOCERA MITA</strong></div>
+            <div class="col-md-8 col-sm-8 col-xs-12">
               <div class="row">
-                <div class="col-md-3">
-                  <div class="lang text-right"><a href="/ru"><img src="img/1.gif" alt=""></a><a href="/en"><img src="img/2.gif" alt=""></a></div>
+                <div class="col-md-2 col-sm-3 col-xs-12">
+                  <div class="lang text-center"><a href="/ru"><img src="img/1.gif" alt=""></a><a href="/en"><img src="img/2.gif" alt=""></a></div>
                 </div>
-                <div class="col-md-3 text-right"><a href="skype:kyocera-fs.ru?chat" target="_blank" title="KYOCERA Document Solutions Inc. global site" class="extern"><i class="fa fa-skype"> </i><span> kyocera-fs.ru </span></a></div>
-                <div class="col-md-6 col-search">
+                <div class="col-md-5 text-right col-sm-4 col-xs-12">
                   <div class="form-search">
                     <form id="search-form" name="TopSearchForm" action="/index/search_results.html" role="form" class="form-inline search">
                       <div class="form-group">
@@ -50,8 +53,8 @@
                       <button type="submit" title="search" class="btn btn-default"><i class="fa fa-search"></i></button>
                     </form>
                   </div>
-                  <button type="button" data-target=".form-search" class="search-toggle navbar-toggle"><i class="fa fa-search"></i></button>
                 </div>
+                <div class="col-md-5 col-sm-5 col-xs-12 text-right header-contacts"><a href="#" class="header-tel"> <i class="fa fa-phone"></i><span>+7 (495) 223-26-12</span></a><br><a href="#" class="header-mail"> <i class="fa fa-envelope"></i><span>KDRU-info@dru.kyocera.com</span></a></div>
               </div>
             </div>
           </div>
@@ -63,18 +66,20 @@
             <button type="button" data-toggle="collapse" data-target=".navbar-top-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
           </div>
           <div class="collapse navbar-collapse navbar-top-collapse collapsing">
-            <ul class="nav navbar-nav">
-              <li class="catalog"><a title="Где купить?" target="_self" href="catalog.html"> <i class="fa fa-bars"> </i><span> Каталог</span></a>
+            <div class="nav navbar-nav">
+              <div id="catalogCopy" class="catalog-btn"><a title="Где купить?" target="_self" href="catalog.html"> <i class="fa fa-bars"> </i><span> Каталог</span></a>
                 <ul class="submenu">
-                  <li><a href="#">Монохромные копиры | МФУ</a></li>
-                  <li><a href="#">Цветные копиры | МФУ</a></li>
-                  <li><a href="#">Монохромные принтеры</a></li>
-                  <li><a href="#">Цветные принтеры</a></li>
-                  <li><a href="#">Расходные материалы</a></li>
-                  <li><a href="#">Опции | Аксессуары</a></li>
-                  <li><a href="#">Архивные модели</a></li>
+                  <li><a href="catalog.html">Монохромные копиры | МФУ</a></li>
+                  <li><a href="catalog.html">Цветные копиры | МФУ</a></li>
+                  <li><a href="catalog.html">Монохромные принтеры</a></li>
+                  <li><a href="catalog.html">Цветные принтеры</a></li>
+                  <li><a href="catalog.html">Расходные материалы</a></li>
+                  <li><a href="catalog.html">Опции | Аксессуары</a></li>
+                  <li><a href="catalog.html">Архивные модели</a></li>
                 </ul>
-              </li>
+              </div>
+            </div>
+            <ul class="nav navbar-nav">
               <li class="active"><a title="На главную" target="_self" href="index.html">Главная</a></li>
               <li><a title="Продукты" target="_self" href="content.html">О нас</a></li>
               <li><a title="Решения" target="_self" href="content.html">Контакты</a></li>
@@ -82,7 +87,7 @@
               <li><a title="О нас" target="_self" href="content.html">Оплата</a></li>
               <li><a title="Где купить?" target="_self" href="content.html">Доставка</a></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
+            <ul id="userBlockCopy" class="nav navbar-nav navbar-right user-block">
               <li><a href="#modalAuth" data-target="#modalAuth" data-toggle="modal"><i class="fa fa-user"> </i> Вход</a></li>
               <li><a href="#"><i class="fa fa-shopping-cart"> </i> Корзина</a></li>
               <li><a href="#"><i class="fa fa-info"> </i> Статус заказа</a></li>
@@ -141,6 +146,7 @@
                 <li class="parent"><a href="category.html" title="Архивные модели">Архивные модели</a></li>
               </ul>
             </aside>
+            <div class="smart-filter offset-medium"><img src="https://image.prntscr.com/image/hlSSMgy1QZOhUjystCtxVg.png" alt="" class="img-responsive"></div>
           </div>
           <div class="col-md-9">
             <ol class="breadcrumb">
@@ -149,8 +155,7 @@
               <li><a href="category.html">Монохромные копиры</a></li>
               <li class="active">Монохромные копировальные устройства | МФУ формата А4 (31)</li>
             </ol>
-            <h1 class="offset-small">Монохромные копировальные устройства | МФУ формата А4</h1>
-            <div class="smart-filter offset-medium"><img src="https://image.prntscr.com/image/hlSSMgy1QZOhUjystCtxVg.png" alt="" class="img-responsive"></div>
+            <h1 class="offset-small">Монохромные копировальные устройства | МФУ формата А4				</h1>
             <div class="products-block">
               <ul class="products-block__category">
                 <li><a href="#">Монохромные копировальные устройства | МФУ формата А4 (31)</a></li>
@@ -405,7 +410,7 @@
       <footer class="main-footer">
         <div class="container">
           <div class="row">
-            <div class="col-md-2"><a href="/" class="logo"><img src="img/kyocera-logo.png" alt=""></a>
+            <div class="col-lg-2 col-md-3 col-sm-4 text-center"><a href="/" class="logo"><img src="img/kyocera-logo.png" alt=""></a>
               <ul class="social">
                 <li><a href="#"><i class="fa fa-vk"></i></a></li>
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -413,7 +418,7 @@
                 <li><a href="#"><i class="fa fa-odnoklassniki"></i></a></li>
               </ul>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-3 col-sm-4">
               <ul class="ul ul--col2">
                 <li><a href="#">Главная </a></li>
                 <li><a href="#">О нас </a></li>
@@ -423,8 +428,8 @@
                 <li><a href="#">Доставка </a></li>
               </ul>
             </div>
-            <div class="col-md-3 awards"><img src="img/stmp.jpg" alt=""></div>
-            <div class="col-md-4">
+            <div class="col-lg-3 col-md-2 col-sm-4 awards"><img src="img/stmp.jpg" alt=""></div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
               <div class="media">
                 <h2>kyocera-fs.ru</h2>
                 <div class="media-body">
@@ -438,14 +443,14 @@
       <footer id="footer">
         <div class="container">
           <div class="row">
-            <div class="col-md-7">
+            <div class="col-sm-5">
               <ul class="ul">
                 <li><a href="#">Прайс-лист</a></li>
                 <li><a href="#">Обратная связь</a></li>
                 <li><a href="#">Где купить</a></li>
               </ul>
             </div>
-            <div class="col-md-5 text-right">Copyright © 2011-2016 Kyocera-fs.ru All Rights Reserved</div>
+            <div class="col-sm-7 text-right">Copyright © 2011-2016 Kyocera-fs.ru All Rights Reserved</div>
           </div>
         </div>
       </footer><a id="scrollTop" href="#" class="fa">Scroll to top</a>
