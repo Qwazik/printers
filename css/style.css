@@ -20795,39 +20795,43 @@ div.product-item {
   margin-right: 10px; }
 
 .header-tel {
-  font-size: 19px; }
+  font-size: 18px; }
+
+.header-mail {
+  font-size: 17px; }
 
 body {
   min-width: 320px; }
 
 .features-block {
-  padding: 30px 0px 0px;
-  background-color: #EFEFEF; }
+  background-color: #EFEFEF;
+  overflow: hidden;
+  padding: 15px 0 20px; }
 
 .features-item {
   margin-bottom: 30px;
-  display: table;
-  height: 80px; }
+  height: 80px;
+  text-align: center; }
   .features-item .icon {
     text-align: center;
-    display: table-cell;
     background-color: #FFF;
     display: inline-block;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    line-height: 80px;
+    line-height: 60px;
     vertical-align: middle;
-    margin-right: 20px; }
+    margin: 0 auto;
+    margin-bottom: 10px; }
   .features-item .icm {
     display: inline-block;
     vertical-align: middle;
-    font-size: 40px;
+    font-size: 30px;
     color: #DF0523; }
   .features-item .name {
-    display: table-cell;
+    text-align: center;
     vertical-align: middle;
-    font-size: 20px; }
+    font-size: 14px; }
 
 .popup-product {
   width: auto;
@@ -20901,6 +20905,21 @@ body {
   text-align: center;
   color: #333;
   float: none !important; }
+
+#mainSearch {
+  max-width: 260px;
+  position: relative;
+  padding-right: 40px; }
+  #mainSearch .form-group, #mainSearch input {
+    box-sizing: border-box;
+    width: 100% !important; }
+  #mainSearch input {
+    margin-right: 0 !important; }
+  #mainSearch .btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%; }
 
 @media screen and (max-width: 1240px) {
   #header strong {
