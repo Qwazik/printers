@@ -20606,7 +20606,8 @@ div.product-item {
   white-space: nowrap; }
 
 .main-card .price {
-  font-size: 30px; }
+  font-size: 30px;
+  line-height: 38px; }
   .main-card .price span {
     font-weight: bold; }
   .main-card .price span, .main-card .price i {
@@ -20844,6 +20845,62 @@ body {
       vertical-align: middle; }
     .popup-product .price i {
       margin-left: 5px; }
+
+.select-col {
+  position: relative;
+  padding: 0 38px;
+  border-radius: 4px;
+  max-width: 120px;
+  margin: 10px 0;
+  overflow: hidden;
+  border: 1px solid #EFEFEF;
+  line-height: 38px;
+  height: 38px; }
+  .select-col input {
+    width: 100%;
+    border: none;
+    text-align: center; }
+  .select-col button {
+    background: none;
+    width: 38px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.6em; }
+  .select-col .min {
+    left: 0;
+    border-right: 1px solid #EFEFEF; }
+  .select-col .plus {
+    right: 0;
+    border-left: 1px solid #EFEFEF; }
+
+@media screen and (min-width: 992px) {
+  .search-mobile {
+    display: none; } }
+
+.search-mobile {
+  float: right; }
+  .search-mobile input {
+    height: 34px;
+    border-radius: 4px;
+    border-style: solid;
+    box-sizing: border-box;
+    border-color: #DDDDDD;
+    color: #333;
+    width: 150px;
+    border-width: 1px;
+    padding: 0 10px;
+    display: none; }
+
+.navbar-header .search-toggle {
+  height: 34px;
+  padding: 0;
+  width: 34px;
+  text-align: center;
+  color: #333;
+  float: none !important; }
 
 @media screen and (max-width: 1240px) {
   #header strong {
