@@ -20787,6 +20787,9 @@ div.product-item {
   .mobile-header .catalog-btn {
     color: white; }
 
+.header-contacts .text-left {
+  display: inline-block; }
+
 .header-contacts a {
   color: black; }
 
