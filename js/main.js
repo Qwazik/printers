@@ -3,6 +3,8 @@ $(function(){
 	initEventSlider();
 	initStageBanner();
 
+	$('input[type="tel"]').inputmask('+7(999)999-99-99');
+
 	$('.owl-carousel').each(function(){
 		var items = $(this).data('items');
 		var mdItems, smItems = 2, xsItems = 1;
@@ -68,6 +70,23 @@ $(function(){
 		if(menu.is('.open') && !noMenu){
 			menu.removeClass('open');
 		}
+	});
+
+	// addToCart
+	$('.toCart').click(function(){
+		$('#modalAddToCart').modal('show');
+		//...
+		return false;
+	});	
+	$('.comparison').click(function(){
+		$('#modalAddToComp').modal('show');
+		//...
+		return false;
+	});
+
+	$('.main-card__header .fav').click(function(){
+		$(this).toggleClass('active');
+		return false;
 	});
 });
 
